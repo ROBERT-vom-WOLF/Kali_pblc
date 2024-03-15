@@ -1,0 +1,34 @@
+
+############################### chmod befehl #########################################
+
+Hier sind einige wichtige Optionen und ihre Bedeutung:
+
+1. Berechtigungen für Benutzerklassen:
+   - u: Benutzer (der Dateibesitzer).
+   - g: Gruppe (Mitglieder der Gruppe, zu der die Datei gehört).
+   - o: Andere (alle Benutzer außerhalb von u und g).
+   - a: Alle (entspricht u, g und o zusammen).
+
+2. Berechtigungen:
+   - r: Lesen (Read).
+   - w: Schreiben (Write).
+   - x: Ausführen (Execute).
+
+3. Kombinationen:
+   - +: Hinzufügen von Berechtigungen.
+   - -: Entfernen von Berechtigungen.
+   - =: Setzen von Berechtigungen auf einen bestimmten Wert.
+
+4. Beispiele:
+   - chmod 755 datei.txt: Der Besitzer kann lesen, schreiben und ausführen. Gruppenmitglieder und andere können nur lesen und ausführen.
+   - chmod 644 datei.txt: Der Besitzer kann lesen und schreiben. Gruppenmitglieder und andere können nur lesen.
+
+5. Numerische Berechtigungen:
+   - Jede Berechtigung wird durch eine dreistellige Zahl dargestellt (z. B. 755 oder 644).
+   - Die erste Ziffer repräsentiert den Besitzer, die zweite die Gruppe und die dritte alle anderen.
+   - Jede Ziffer entspricht der Summe der Berechtigungen (4 für Lesen, 2 für Schreiben, 1 für Ausführen).
+
+6. Beispiel für numerische Berechtigungen:
+   - 755 bedeutet: Der Besitzer hat volle Berechtigungen (rwx), die Gruppe und andere können lesen und ausführen (r-x).
+
+Bitte beachte, dass du die Berechtigungen sorgfältig anpassen solltest, um die Sicherheit deines Systems zu gewährleisten.

@@ -1,0 +1,24 @@
+Um Kate als deinen Standard-Texteditor auf einem Linux GNOME-Desktop festzulegen, gibt es verschiedene Möglichkeiten. Hier sind zwei Ansätze:
+
+1. Über die Dateieigenschaften:
+    - Klicke mit der rechten Maustaste auf eine Textdatei, die du mit Kate öffnen möchtest.
+    - Wähle "Eigenschaften" aus.
+    - Gehe zum Tab "Öffnen mit".
+    - Wähle Kate aus der Liste der Anwendungen aus.
+    - Klicke auf den Button "Als Standard festlegen".
+
+2. Manuell über die Konfigurationsdateien:
+    - Öffne ein Terminal.
+    - Führe den folgenden Befehl aus, um eine Kopie der Gedit-Desktop-Datei zu erstellen und sie in Kate umzubenennen:
+        bash
+        sudo cp /usr/share/applications/gedit.desktop /usr/share/applications/kate.desktop
+        
+    - Bearbeite die kopierte Datei, um "gedit" durch "kate" zu ersetzen. Du kannst dazu einen Texteditor wie Vim verwenden:
+        bash
+        sudo vim /usr/share/applications/kate.desktop
+        
+        Ersetze "gedit" durch "kate" (Verwende den Befehl :%s/gedit/kate).
+    - Speichere die Datei und schließe den Texteditor.
+
+Jetzt sollte Kate als Standardanwendung für Textdateien in deinem GNOME-Desktop eingestellt sein! 📝✨
+
